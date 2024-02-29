@@ -1568,7 +1568,7 @@ Peters", ano=1999)
 Por padrão, argumentos podem ser passados para uma função Python tanto por posição quanto explicitamente pelo nome. Para uma melhor legibilidade e desempenho, faz sentido restringir a maneira pelo qual argumentos possam ser passados, assim um desenvolvedor precisa apenas olhar para a definição da função para determinar se os itens são passados
 por posição, por posição e nome, ou por nome.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/02b9ee7a-2b6e-4708-ab7d-cf4faaaefb71/a6ba9ac3-bde6-4181-b0c4-c54932e10379/Untitled.png)
+![image](https://github.com/WpMateus/Desenvolvimento-em-Python/assets/98241533/ecf3d5e4-36ac-479b-874b-b363fc126a37)
 
 ### Positional only
 
