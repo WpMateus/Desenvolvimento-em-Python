@@ -47,6 +47,8 @@ As strings em Python são representadas pela classe `str`. Elas são utilizadas 
 
 “Python”, ‘Python’
 
+---
+
 ### Variáveis e constantes
 
 ## Variáveis
@@ -81,6 +83,8 @@ DIAS_SEMANA = 7
 - Escolher nomes sugestivos
 - Nome de constantes todo em maiúsculo. Ex: PRECO_TOTAL
 
+---
+
 ### Conversão de tipos
 
 Python oferece funções embutidas para converter um tipo de dado em outro. Essas funções incluem:
@@ -110,6 +114,8 @@ print(falso)  # Output: False
 
 É importante ter cuidado ao realizar conversões de tipos, pois algumas conversões podem levar à perda de informações ou a resultados inesperados.
 
+---
+
 ### Funções de entrada e saída
 
 ## Lendo valores com a função input
@@ -120,7 +126,20 @@ A função builtin input é utilizada quando queremos ler dados da entrada padr�
 
 A função builtin print é utilizada quando queremos exibir dados na saída padrão (tela). Ela recebe um argumento obrigatório do tipo varargs de objetos e 4 argumentos opcionais (sep, end, file e flush). Todos os objetos são convertidos para string, separados por sep e terminados por end. A string final é exibida para o usuário.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/02b9ee7a-2b6e-4708-ab7d-cf4faaaefb71/1971b993-e1e9-4fb5-b032-a7132c52933f/Untitled.png)
+```python
+nome = "Guilherme"
+sobrenome = "Carvalho"
+
+print(nome, sobrenome)
+print(nome, sobrenome, end=" ... \n")
+print(nome, sobrenome, sep="#")
+
+>>> Guilherme Carvalho
+>>> Guilherme Carvalho ...
+>>> Guilherme #Carvalho
+```
+
+---
 
 ### Operadores aritméticos
 
@@ -134,6 +153,8 @@ Os operadores aritméticos em Python são utilizados para realizar operações m
 - `%`: retorna o resto da divisão entre dois valores.
 - `**` : realiza a potenciação de um valor.
 
+---
+
 ### Operadores de comparação
 
 São operadores para comparar dois valores.
@@ -142,6 +163,8 @@ São operadores para comparar dois valores.
 - Diferença `!=`
 - Maior que / maior ou igual `> / >=`
 - Menor que / menor ou igual `< / <=`
+
+---
 
 ### Operadores de atribuição
 
@@ -155,6 +178,8 @@ São operadores utilizados para definir o valor inicial ou sobrescrever o valor 
 - Atribuição com divisão inteira `//=`
 - Atribuição com módulo `%=`
 - Atribuição com exponenciação `**=`
+
+---
 
 ### Operadores lógicos
 
@@ -191,6 +216,8 @@ if not x > y:
 
 É importante entender como os operadores lógicos funcionam para construir expressões lógicas corretas e obter resultados esperados em suas condições de controle de fluxo.
 
+---
+
 ### Operadores de identidade
 
 São operadores utilizados para comparar se os dois objetos testados ocupam a mesma posição na memória. É utilizado o is.
@@ -210,6 +237,8 @@ False
 saldo is limite
 True
 ```
+
+---
 
 ### Operadores de associação
 
@@ -231,6 +260,8 @@ saques = [1500, 100]
 200 in saques
 >>> False
 ```
+
+---
 
 ### Indentação e blocos
 
@@ -269,6 +300,8 @@ self.saldo -= valor
 
 # fim do bloco do método
 ```
+
+---
 
 ### Estruturas condicionais
 
@@ -353,6 +386,8 @@ status = "Sucesso" if saldo >= saque else "Falha"
 
 print(f"{status} ao realizar o saque!")
 ```
+
+---
 
 ### Estruturas de repetição
 
@@ -462,6 +497,8 @@ while(N > 0):
 
 ```
 
+---
+
 ### Métodos úteis da classe string
 
 A classe String do Python é famosa por ser rica em métodos e possuir uma interface muito fácil de trabalhar.
@@ -510,6 +547,8 @@ print(curso.center(10, "#"))
 print(".".join(curso))
 >>> "P.y.t.h.o.n"
 ```
+
+---
 
 ### Interpolação de variáveis
 
@@ -590,6 +629,8 @@ print(f"Valor de PI: {PI:10.2f}")
 3.14"
 ```
 
+---
+
 ### Fatiamento de string
 
 Fatiamento de strings e uma técnica utilizada para retornar substrings (partes da string original), informando inicio (start), fim (stop) e passo (step): [start: stop[, step]].
@@ -619,6 +660,8 @@ nome[ ::- 1]
 >>> "ohlavraC ed ruhtrA emrehliuG"
 ```
 
+---
+
 ### String múltiplas linhas
 
 Strings de múltiplas linhas são definidas informando 3 aspas simples ou duplas durante a atribuição. Elas podem ocupar várias linhas do código, e todos os espaços em branco são incluídos na string final.
@@ -635,6 +678,8 @@ Eu estou aprendendo Python
 Olá meu nome é Guilherme,
 Eu estou aprendendo Python
 ```
+
+---
 
 ### Listas: Criação e acesso aos dados
 
@@ -764,6 +809,8 @@ quadrado.append (numero ** 2)
 numeros = [1, 30, 21, 2, 9, 65, 34]
 quadrado = [numero ** 2 for numero in numeros]
 ```
+
+---
 
 ### Métodos da classe list
 
@@ -925,6 +972,8 @@ sorted(linguagens, key=lambda x: len(x), reverse=True) # ["python", "csharp",
 "java", "js", "c"]
 ```
 
+---
+
 ### Tuplas
 
 Tuplas são estruturas de dados muito parecidas com as listas, a principal diferença é que tuplas são imutáveis enquanto listas são mutáveis. Podemos criar tuplas através da classe tuple, ou colocando valores separados por vírgula de parenteses.
@@ -1009,6 +1058,8 @@ for indice, carro in enumerate(carros):
 		print(f"{indice}: {carro}")
 ```
 
+---
+
 ### Métodos da classe tuple
 
 ### ().count
@@ -1037,6 +1088,8 @@ linguagens = ("python", "js", "c", "java", "csharp",)
 
 len(linguagens) # 5
 ```
+
+---
 
 ### Conjuntos
 
@@ -1085,6 +1138,8 @@ carros = {"gol", "celta", "palio"}
 for indice, carro in enumerate(carros):
 		print(f"{indice}: {carro}")
 ```
+
+---
 
 ### Métodos da classe set
 
@@ -1235,6 +1290,8 @@ numeros = {1, 2, 3, 1, 2, 4, 5, 5, 6, 7, 8, 9, 0}
 10 in numeros # False
 ```
 
+---
+
 ### Dicionários
 
 Um dicionário é um conjunto não-ordenado de pares chave:valor, onde as chaves são únicas em uma dada instância do dicionário. Dicionários são delimitados por chaves: {}, e contém uma lista de pares chave:valor separada por vírgulas.
@@ -1297,6 +1354,8 @@ for chave, valor in contatos.items():
 # chappie@gmail.com {'nome': 'Chappie', 'telefone': '3344-9871'}
 # melaine@gmail.com {'nome': 'Melaine', 'telefone': '3333-7766'}
 ```
+
+---
 
 ### Métodos da classe dict
 
@@ -1491,6 +1550,8 @@ del contatos["chappie@gmail.com"]
 
 contatos # {'guilherme@gmail.com': {'nome': 'Guilherme'}, 'giovanna@gmail.com'{'nome': 'Giovanna', 'telefone': '3443-2121'}, 'melaine@gmail.com': {'nome':'Melaine', 'telefone': '3333-7766'}}
 ```
+
+---
 
 ### Funções
 
@@ -1705,6 +1766,8 @@ Primeiro Programa em POO
 
 João tem uma bicicletaria e gostaria de registrar as vendas de suas bicicletas. Crie um programa onde João informe: cor, modelo, ano e valor da bicicleta vendida. Uma bicicleta pode: buzinar, parar e correr. Adicione esses comportamentos!
 
+---
+
 ### Construtores e destrutores
 
 Conhecendo os métodos __init__ e __del__
@@ -1733,4 +1796,150 @@ class Cachorro:
 C = Cachorro()
 del c
 
+```
+
+---
+
+### Herança em POO
+
+Em programação herança é a capacidade de uma classe filha derivar ou herdar as características e comportamentos da classe pai (base).
+
+### Benefícios da herança
+
+- Representa bem os relacionamentos do mundo real.
+- *Fornece reutilização de código, não precisamos escrever o mesmo código repetidamente. Além disso, permite adicionar mais recursos a uma classe sem modificá-la.
+- *É de natureza transitiva, o que significa que, se a classe B herdar da classe A, todas as subclasses de B herdarão automaticamente da classe A.
+
+```python
+class A:
+		pass
+
+class B(A):
+		pass
+```
+
+## Herança simples e herança multipla
+
+### Herança simples
+
+Quando uma classe filha herda apenas uma classe pai, ela é chamada de herança simples.
+
+```python
+class A:
+		pass
+
+class B(A):
+		pass
+```
+
+### Herança multipla
+
+Quando uma classe filha herda de várias classes pai, ela é chamada de herança múltipla.
+
+```python
+class A:
+		pass
+
+class B(A):
+		pass
+
+class C(A, B):
+		pass
+```
+
+---
+
+### Encapsulamento
+
+### O que é encapsulamento?
+
+O encapsulamento é um dos conceitos fundamentais em programaçao orientada a objetos. Ele descreve a ideia de agrupar dados e os métodos que manipulam esses dados em uma unidade. Isso impõe restrições ao acesso direto a variáveis e métodos e pode evitar a modificação acidental de dados. Para evitar alterações acidentais, a variável de um objeto só pode ser alterada pelo método desse objeto.
+
+### Recursos públicos e privados
+
+Em linguagens como Java e C++, existem palavras reservadas para definir o nível de acesso aos atributos e métodos da classe. Em Python não temos palavras reservadas, porém usamos convenções no nome do recurso, para definir se a variável é pública ou privada.
+
+- Público: Pode ser acessado de fora da classe.
+- Privado: Só pode ser acessado pela classe.
+
+**PÚBLICO / PRIVADO**
+
+Todos os recursos são públicos, a menos que o nome inicie com underline. Ou seja, o interpretador Python não irá garantir a proteção do recurso, mas por ser uma convenção amplamente adotada na comunidade, quando encontramos uma variável e/ou método com nome iniciado por underline, sabemos que não deveríamos manipular o seu valor diretamente, ou invocar o método fora do escopo da classe.
+
+```python
+class Conta:
+	def __init__(self, saldo=0):
+			self. saldo = saldo
+
+	def depositar(self,valor):
+			pass
+
+	def sacan(self, valor):
+			pass
+```
+
+### property()
+
+Com o property() do Python, você pode criar atributos gerenciados em suas classes. Você pode usar atributos gerenciados, também conhecidos como propriedades, quando precisar modificar sua implementação interna sem alterar a API pública da classe.
+
+```python
+class Foo:
+		def _init_(self, x=None):
+				self ._ x = x
+
+	@property
+	def x(self):
+			return self ._ x or 0
+
+	@x.setter
+	def x(self, value):
+			_x = self ._ x or 0
+			_value = value or 0
+			self ._ x = _x + _value
+
+	@x.deleter
+		def x(self):
+				selfx_x = -1
+
+foo = Foo(10)
+print(foo.x)
+foo.x = 10
+print(foo.x)
+del foo.x
+print(foo.x)
+```
+
+---
+
+### Polimorfismo
+
+A palavra polimorfismo significa ter muitas formas. Na programação, polimorfismo significa o mesmo nome de função (mas assinaturas diferentes) sendo usado para tipos diferentes.
+
+```python
+len("python")
+len([10, 20, 30])
+```
+
+### Polimorfismo com Herança
+
+Na herança, a classe filha herda os métodos da classe pai. No entanto, é possível modificar um método em uma classe filha herdada da classe pai. Isso é particularmente útil nos casos em
+que o método herdado da classe pai não se encaixa perfeitamente na classe filha.
+
+```python
+class Passaro:
+			def voar(self): pass
+
+class Pardal(Passaro):
+			def voar(self):
+					print("Pardal voa")
+
+class Avestruz(Passaro):
+			def voar(self):
+					print("Avestruz não voa")
+
+def plano_de_voo(passaro):
+		passaro. voar()
+
+plano_de_voo(Pardal())
+plano_de_voo(Avestruz())
 ```
