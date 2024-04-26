@@ -22,7 +22,6 @@ Acesso Permitido
 """
 
 senha_correta = 2002
-armazenando_teste = []
 
 while True:
     teste_senha = int(input())
